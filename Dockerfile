@@ -23,5 +23,3 @@ RUN chmod +x /usr/entrypoint.sh
 
 EXPOSE 8443
 ENTRYPOINT ["/usr/entrypoint.sh"]
-
-CMD ["tcpdump", "-i", "any", "-nn", "-X", "port", "8443"]
