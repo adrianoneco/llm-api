@@ -1,0 +1,6 @@
+services:
+  llm:
+    image: docker.io/easydevsoftweares/llm-ai:latest
+    container_name: llm
+    ports:
+      - "9443:8443"
