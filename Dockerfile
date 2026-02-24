@@ -18,8 +18,13 @@ ENV PATH="/root/.lmstudio/bin:$PATH"
 
 RUN apt update
 
+COPY ./api /app
+WORKDIR /app
+
 COPY entrypoint.sh /usr/entrypoint.sh
 RUN chmod +x /usr/entrypoint.sh
 
 EXPOSE 8443
+
+VOLUME ["/root/.lmstudio"]
 ENTRYPOINT ["/usr/entrypoint.sh"]
