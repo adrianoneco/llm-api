@@ -4,7 +4,7 @@ export default defineConfig({
     server: {
         port: 8443,
         host: true,
-        allowedHosts: ['llm', 'localhost', '127.0.0.1'],
+        allowedHosts: ['llm', 'localhost', '127.0.0.1', 'lms.ubva.com.br'],
         proxy: {
             '/api': {
                 target: 'http://localhost:1234',

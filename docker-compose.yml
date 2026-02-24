@@ -9,6 +9,7 @@ services:
       - LLM_MODEL=liquid/lfm2-350m
     volumes:
       - llm_data:/root/.lmstudio
+      - ./entrypoint.sh:/usr/entrypoint.sh
     networks:
       - ubva-net
 
